@@ -1,1 +1,1 @@
-# the page is under development story_commerce
+# the page story_commerce is under development
