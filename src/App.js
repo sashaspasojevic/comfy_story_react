@@ -10,7 +10,7 @@ import {
   Cart,
   Error,
   Checkout,
-  Private,
+  PrivateRoute,
 } from "./pages";
 
 function App() {
@@ -36,9 +36,9 @@ function App() {
           path='/products/:id'
           children={<SingleProduct></SingleProduct>}
         ></Route>
-        <Route exact path='/checkout'>
+        <PrivateRoute exact path='/checkout'>
           <Checkout></Checkout>
-        </Route>
+        </PrivateRoute>
         <Route path='*'>
           <Error></Error>
         </Route>
